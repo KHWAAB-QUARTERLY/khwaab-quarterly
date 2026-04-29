@@ -5,20 +5,15 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 localStorage.setItem("user","admin");\
-localStorage.setItem("pass","1234");\
-\
-function login() \{\
+\f0\fs24 \cf0 function login() \{\
   let user = document.getElementById("username").value;\
   let pass = document.getElementById("password").value;\
 \
-  let savedUser = localStorage.getItem("user");\
-  let savedPass = localStorage.getItem("pass");\
-\
-  if(user === savedUser && pass === savedPass)\{\
+  if(user === "admin" && pass === "1234")\{\
     localStorage.setItem("loggedIn","true");\
     window.location.href = "dashboard.html";\
   \} else \{\
     alert("Wrong details");\
   \}\
+\}\
 \}}
